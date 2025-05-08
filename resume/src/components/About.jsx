@@ -28,10 +28,13 @@ const About = () => {
         <div className="max-w-3xl mx-auto text-center lg:text-left flex flex-col lg:flex-row items-center gap-10">
           <div className="text-lg text-gray-300 space-y-4">
             <p>
-              Hello! I'm Tamhid, a passionate developer with a love for creating elegant and efficient solutions. I specialize in front-end development using technologies like React, Next.js, and Tailwind CSS.
+              I'm Tamhid Chowdhury, a Cloud DevOps Engineer with over 7 years of experience designing, automating, and managing scalable infrastructure in both cloud and hybrid environments. I specialize in building secure, resilient CI/CD pipelines, infrastructure as code, and monitoring solutions that keep modern applications running smoothly.
             </p>
             <p>
-              I enjoy turning complex problems into simple, beautiful, and intuitive designs. When I'm not coding, you can find me [Your Hobby 1], [Your Hobby 2], or exploring the latest advancements in web technology.
+              At Alvaria (formerly Aspect Software), I’ve led cloud migration initiatives, managed thousands of servers, and built multi-region deployment pipelines with support for global disaster recovery. I also like to sharpen my skills through hands-on projects involving Kubernetes, Terraform, Ansible, and monitoring stacks like Prometheus and Grafana.
+            </p>
+            <p>
+            I'm passionate about solving complex problems with clean, automated solutions—and always eager to learn the next tool that makes systems faster, safer, or smarter. When I’m not deep in the terminal, you’ll likely find me staying active, playing soccer, or exploring new places through travel.
             </p>
           </div>
         </div>

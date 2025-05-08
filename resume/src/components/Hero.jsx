@@ -49,7 +49,7 @@ const Hero = () => {
             Hi, I'm <span className="text-cyan-400">Tamhid</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light text-gray-300">
-            Cloud DevOps Engineer | Automation Enthusiast
+            Cloud DevOps Engineer | Automating Infrastructure, Scaling Systems, Enabling Resilience
           </p>
           <motion.button
             whileHover={{ scale: 1.05, backgroundColor: "#22d3ee" /* cyan-500 */ }}
