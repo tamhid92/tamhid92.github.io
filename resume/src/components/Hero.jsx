@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer';
 
 const Hero = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Only trigger once
+    triggerOnce: false, // Only trigger once
     threshold: 0.2,     // Trigger when 20% of the element is visible
   });
 
@@ -16,9 +16,14 @@ const Hero = () => {
     <ParallaxBanner style={{ aspectRatio: '2 / 1', height: '100vh' }}>
       {/* --- Background Layer --- */}
       <ParallaxBannerLayer
-        image="/background.jpeg" // CHANGE THIS PATH
-        speed={-20} // Adjust speed for parallax intensity
-        className="filter blur-[2px] brightness-50" // Example effects
+        image="/background1.jpg" // CHANGE THIS PATH
+        speed={-150}
+        className="bg-cover"
+        style={{
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'blur(10px) brightness(0.7)',
+        }}
       />
 
       {/* --- Content Layer --- */}
@@ -33,7 +38,7 @@ const Hero = () => {
           <div className='flex justify-center bg-origin-padding' ref={ref}> {/* Attach the ref here */}
             <motion.img
               src="/profile.jpg" // CHANGE THIS
-              alt="Your Name"
+              alt="Tamhid"
               className=" w-90 h-60 rounded-full object-cover shadow-lg mb-6 lg:mb-0"
               initial={{ scale: 1, opacity: 0 }}
               animate={inView ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }} // Animate out when not in view
@@ -44,7 +49,7 @@ const Hero = () => {
             Hi, I'm <span className="text-cyan-400">Tamhid</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light text-gray-300">
-            Cloud DevOps Engineer | Automation Enthusiast | Tech Explorer
+            Cloud DevOps Engineer | Automation Enthusiast
           </p>
           <motion.button
             whileHover={{ scale: 1.05, backgroundColor: "#22d3ee" /* cyan-500 */ }}

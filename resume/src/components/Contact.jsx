@@ -38,10 +38,23 @@ const Contact = () => {
         </p>
 
         {/* Simple Contact Info (Alternative to form) */}
-        <div className="">
-             <a href="mailto:tamhidchowdhury@gmail.com" className=""><MdEmail/>tamhidchowdhury@gmail.com</a>
-             <a href="https://linkedin.com/in/tamhidchowdhury" target="_blank" rel="noopener noreferrer"><FaLinkedin/>Tamhid Chowdhury</a>
-             {/* Add GitHub, Twitter, etc. */}
+        <div className="flex flex-col items-center gap-4">
+          <a
+            href="mailto:tamhidchowdhury@gmail.com"
+            className="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition"
+          >
+            <MdEmail size={24} />
+            tamhidchowdhury@gmail.com
+          </a>
+          <a
+            href="https://linkedin.com/in/tamhidchowdhury"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition"
+          >
+            <FaLinkedin size={24} />
+            Tamhid Chowdhury
+          </a>
         </div>
       </motion.div>
     </section>

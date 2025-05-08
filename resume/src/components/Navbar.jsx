@@ -3,7 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { IoLogoGithub } from "react-icons/io5";
 
 // Import your image
-import logoOnScroll from '/profile.jpg'; // CHANGE THIS PATH
+import logoOnScroll from '/profile.jpg';
+import ghLogo from '/ghLogo.svg';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -104,6 +105,7 @@ const Navbar = () => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
+                  src={ghLogo}
                 />
               ) : (
                 <motion.span
