@@ -67,12 +67,12 @@ const Navbar = () => {
             </AnimatePresence>
           </motion.a>
         </motion.div>
-        <div className="space-x-6">
+        <div className="space-x-6 sm:space-x-2">
           {['about', 'skills', 'projects', 'contact'].map((section) => (
             <button
               key={section}
               onClick={() => scrollToSection(section)}
-              className="text-gray-300 hover:text-cyan-400 transition-colors capitalize font-medium sm:text-sm"
+              className="text-gray-300 hover:text-cyan-400 transition-colors capitalize font-medium sm:text-sm sm:"
             >
               {section}
             </button>

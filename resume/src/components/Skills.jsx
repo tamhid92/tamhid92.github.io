@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 const skillsList = [
   { name: 'Cloud Platforms', content: 'AWS, GCP, Azure' },
   { name: 'Containerization', content: 'Docker, Kubernetes, Helm' },
-  { name: 'Databases', content: 'PostgreSQL, MongoDB, RDS' },
+  { name: 'Databases', content: 'PostgreSQL, MongoDB, SQL Server' },
   { name: 'Networking', content: 'TCP/IP, DNS, HTTP' },
   { name: 'Scripting', content: 'Python, Bash, PowerShell, Ruby' },
   { name: 'Infrastructure as Code', content: 'Terraform, Ansible, Chef, Pulumi' },
