@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { IoLogoGithub } from "react-icons/io5";
 
-// Import your image
 import logoOnScroll from '/profile.jpg';
 import ghLogo from '/ghLogo.svg';
 
@@ -74,7 +72,7 @@ const Navbar = () => {
             <button
               key={section}
               onClick={() => scrollToSection(section)}
-              className="text-gray-300 hover:text-cyan-400 transition-colors capitalize font-medium"
+              className="text-gray-300 hover:text-cyan-400 transition-colors capitalize font-medium sm:text-sm"
             >
               {section}
             </button>
