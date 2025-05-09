@@ -67,7 +67,7 @@ const Navbar = () => {
             </AnimatePresence>
           </motion.a>
         </motion.div>
-        <div className="space-x-6 max-sm:mx-auto">
+        <div className="space-x-2">
           {['about', 'skills', 'projects', 'contact'].map((section) => (
             <button
               key={section}
@@ -80,44 +80,45 @@ const Navbar = () => {
         </div>
         <div className="flex items-center space-x-4">
           <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-1 px-2 rounded transition-colors duration-200"
-            >
-            Resume
-            </a>
-            <motion.div className="text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition-colors">
-          <motion.a
-            href="#"
-            onClick={() => window.open('https://github.com/tamhid92', '_blank')}
-            layout
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-1 px-2 rounded transition-colors duration-200"
           >
-            <AnimatePresence mode="popLayout">
-              {scrolled ? (
-                <motion.img
-                  key="logo"
-                  alt="github"
-                  className="h-8 w-8 rounded-full object-cover"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                  src={ghLogo}
-                />
-              ) : (
-                <motion.span
-                  key="github"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                >
-                </motion.span>
-              )}
-            </AnimatePresence>
-          </motion.a>
-        </motion.div>
+            Resume
+          </a>
+          <motion.div className="text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition-colors">
+            <motion.a
+              href="#"
+              onClick={() => window.open('https://github.com/tamhid92', '_blank')}
+              layout
+            >
+              <AnimatePresence mode="popLayout">
+                {scrolled ? (
+                  <motion.img
+                    key="logo"
+                    alt="github"
+                    className="h-8 w-8 rounded-full object-cover"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    src={ghLogo}
+                    style={{ maxWidth: '100%', height: 'auto' }}
+                  />
+                ) : (
+                  <motion.span
+                    key="github"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                  </motion.span>
+                )}
+              </AnimatePresence>
+            </motion.a>
+          </motion.div>
         </div>
       </div>
     </motion.nav>
