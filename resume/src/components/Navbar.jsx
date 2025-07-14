@@ -68,7 +68,7 @@ const Navbar = () => {
           </motion.a>
         </motion.div>
         <div className="space-x-2">
-          {['about', 'skills', 'projects', 'contact'].map((section) => (
+          {['about', 'certifications', 'skills', 'projects', 'contact'].map((section) => (
             <button
               key={section}
               onClick={() => scrollToSection(section)}

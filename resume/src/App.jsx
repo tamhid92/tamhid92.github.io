@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Certifications from './components/Certifications';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Certifications />
         <Skills />
         <Projects />
         <Contact />

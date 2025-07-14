@@ -28,7 +28,7 @@ const About = () => {
         <div className="max-w-3xl mx-auto text-center lg:text-left flex flex-col lg:flex-row items-center gap-10">
           <div className="text-lg text-gray-300 space-y-4">
             <p>
-              I'm Tamhid Chowdhury, a Cloud DevOps Engineer with over 7 years of experience designing, automating, and managing scalable infrastructure in both cloud and hybrid environments. I specialize in building secure, resilient CI/CD pipelines, infrastructure as code, and monitoring solutions that keep modern applications running smoothly.
+              I'm Tamhid Chowdhury, an AWS certified Cloud DevOps Engineer with over 7 years of experience designing, automating, and managing scalable infrastructure in both cloud and hybrid environments. I specialize in building secure, resilient CI/CD pipelines, infrastructure as code, and monitoring solutions that keep modern applications running smoothly.
             </p>
             <p>
               At Alvaria (formerly Aspect Software), I’ve led cloud migration initiatives, managed thousands of servers, and built multi-region deployment pipelines with support for global disaster recovery. I also like to sharpen my skills through hands-on projects involving Kubernetes, Terraform, Ansible, and monitoring stacks like Prometheus and Grafana.
